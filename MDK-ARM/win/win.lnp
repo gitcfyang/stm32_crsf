@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"win\startup_stm32f103xb.o"
+"win\main.o"
+"win\gpio.o"
+"win\dma.o"
+"win\usart.o"
+"win\stm32f1xx_it.o"
+"win\stm32f1xx_hal_msp.o"
+"win\stm32f1xx_hal_gpio_ex.o"
+"win\stm32f1xx_hal_tim.o"
+"win\stm32f1xx_hal_tim_ex.o"
+"win\stm32f1xx_hal_uart.o"
+"win\stm32f1xx_hal.o"
+"win\stm32f1xx_hal_rcc.o"
+"win\stm32f1xx_hal_rcc_ex.o"
+"win\stm32f1xx_hal_gpio.o"
+"win\stm32f1xx_hal_dma.o"
+"win\stm32f1xx_hal_cortex.o"
+"win\stm32f1xx_hal_pwr.o"
+"win\stm32f1xx_hal_flash.o"
+"win\stm32f1xx_hal_flash_ex.o"
+"win\stm32f1xx_hal_exti.o"
+"win\system_stm32f1xx.o"
+"win\receiver.o"
+--strict --scatter "win\win.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "win.map" -o win\win.axf
